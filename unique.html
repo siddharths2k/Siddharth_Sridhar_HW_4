@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<!-- This HTML file loads the data from “db.json” and creates a drop down menu of the unique bus IDs --> 
+
+
+
+<html>
+
+    <script src = "db_html.js"></script>
+
+    <h1>Select Bus</h1>
+
+    <!-- Creates Drop Down Menu --> 
+    <select id = "Choose_Bus_ID"></select>
+
+
+    <script>
+
+        function getID(bus)
+        {
+            return bus.id
+        }
+
+        var vehicle_ids = data.vehicles.map(getID);
+        var unique_ids = [];
+
+        // Add IDs to unique_ids
+        var result = vehicle_ids.forEach(function(bus)
+        {
+            if(!unique_ids.includes(bus))
+            {
+                unique_ids.push(bus);
+            };
+        });
+        
+        // Add options to drop down menu
+        var Choose_Bus_ID = document.getElementById('Choose_Bus_ID');
+        unique_ids.forEach(function(id)
+        {
+            var option = document.createElement("option");
+            option.value = id;
+            option.innerHTML = id;
+            Choose_Bus_ID.appendChild(option);
+        });
+    </script>
+
+</html>
