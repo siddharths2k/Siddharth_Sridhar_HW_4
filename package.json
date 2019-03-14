@@ -1,0 +1,23 @@
+{
+  "name": "siddharth_sridhar_hw_4",
+  "version": "1.0.0",
+  "description": "Homework 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddharths2k/Siddharth_Sridhar_HW_4.git"
+  },
+  "author": "Siddharth Sridhar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/siddharths2k/Siddharth_Sridhar_HW_4/issues"
+  },
+  "homepage": "https://github.com/siddharths2k/Siddharth_Sridhar_HW_4#readme",
+  "dependencies": {
+    "lowdb": "^1.0.0",
+    "node-fetch": "^2.3.0"
+  }
+}
