@@ -25,11 +25,11 @@ function writeBus(bus)
 {
     // Create new object with required values
     var vehicle = {
-        id = bus.id,
-        label = bus.attributes.label,
-        direction_id = bus.attributes.direction_id,
-        lat = bus.attributes.latitude,
-        long = bus.attributes.longitude
+        id              : bus.id,
+        label           : bus.attributes.label,
+        direction_id    : bus.attributes.direction_id,
+        lat             : bus.attributes.latitude,
+        long            : bus.attributes.longitude
     }
 
     // Write in file db.json
